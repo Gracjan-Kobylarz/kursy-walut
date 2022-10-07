@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 64, 100);
+    font-size: 16px;
+}
+.header {
+    width: 100vw;
+    padding: 20px 50px;
+    background: rgb(0, 76, 142)
+}
+.header__title {
+    text-align: center;
+    color: #fff;
+}
+.main {
+    width: 100%;
+    padding: 50px;
+}
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 25px;
+}
+.column {
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #999;
+}
+.sub-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.currency-list {
+    height: 90%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.currency-list::-webkit-scrollbar {
+    display: none;
+  }
+.currency-list__item {
+    margin: 5px 0;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(217, 230, 246);
+}
+
+.currency-list__item:hover {
+    background: rgb(217, 230, 246);
+}
+.currency-list__item span, .currency-history span {
+display: flex;
+justify-content: space-between;
+}
+.currency-history {
+    list-style: none;
+}
+.history-list__item {
+    margin: 5px 0;
+    padding: 5px 15px;
+    border-bottom: 1px solid rgb(217, 230, 246);
+}
+.footer {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+@media (max-width: 725px) {
+    .column:last-child {
+        height: auto;
+    }
+}
